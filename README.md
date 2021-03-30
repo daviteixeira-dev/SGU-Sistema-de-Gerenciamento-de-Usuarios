@@ -27,25 +27,17 @@ CRUD Application with Node, Express &amp; MongoDB
   <a href="#-license">License</a>
 </p>
 
-![Printsreen](./.github/index.png)
+![Printsreen](./crud_app/assets/img/index.png)
 
 ## 👨🏻‍💻 Sobre o projeto
-<p>Nossa plataforma aproxima quem quer comprar de quem quer vender. Eles mesmo se comunicam, e negociam os valores e a entrega. Sem atravessador e sem custo nenhum para o produtor e parar o consumidor.
+<p>Projeto final da disciplina de Desenvolvimento de Software para Web (2021), onde fizemos um Sistema de Gerenciamento de Usuários usando um CRUD com Node, Express e MongoDB.
 </p>
 
 ## 🚀 Tecnologias
 
 - [Node.js](https://nodejs.org/en/)
-- [ReactJS](https://reactjs.org/)
 - [Express](https://expressjs.com/pt-br/)
-- [Prettier](https://prettier.io/)
-- [EditorConfig](https://editorconfig.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [JSON Web Tokens](https://jwt.io/)
-- [UUID v4](https://www.uuidgenerator.net/version4)
-- [MySQL](https://www.mysql.com/)
-- [Docker](https://www.docker.com/)
-- [TypeORM](https://typeorm.io/#/)
+- [MongoDB](https://www.mongodb.com/)
 
 ## 💻 Instalação, execução e desenvolvimento
 
