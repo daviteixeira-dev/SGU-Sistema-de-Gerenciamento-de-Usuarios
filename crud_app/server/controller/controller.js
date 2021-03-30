@@ -1,14 +1,14 @@
 var Userdb = require('../model/model');
 
-// create and save new user
+// criar e salvar um novo usuário 
 exports.create = (req, res) => {
     // validate request
     if(!req.body){
-        res.status(400).send({ message: "Content can not be empty!"});
+        res.status(400).send({ message: "O conteúdo não pode estar vazio!"});
         return;
     }
 
-    // new user
+    // novo usuário
     const user = new Userdb({
         name: req.body.name,
         email: req.body.email,
@@ -16,21 +16,20 @@ exports.create = (req, res) => {
         status: req.body.status
     })
 
-    // save user in the database
+    // salvar usuário no banco de dados 
     user
         .save(user)
         .then(data => {
-            //res.send(data)
             res.redirect('/add-user')
         })
         .catch(err => {
             res.status(500).send({
-                message : err.message || "Some error occurred while creating a create operation"
+                message : err.message || "Ocorreu algum erro ao criar uma operação de criação."
             });
         });
 }
 
-// retrieve and return all users/ retrive and return a single user
+// recuperar e retornar todos os usuários / recuperar e retornar um único usuário 
 exports.find = (req, res) => {
 
     if(req.query.id){
@@ -39,13 +38,13 @@ exports.find = (req, res) => {
         Userdb.findById(id)
           .then(data => {
               if(!data){
-                  res.status(404).send({ message : "Not found user with id " + id })
+                  res.status(404).send({ message : "Usuário não encontrado com id=" + id })
               }else{
                   res.send(data)
               }
           })
           .catch(err => {
-              res.status(500).send({ message: "Erro retrieving user with id " + id})
+              res.status(500).send({ message: "Erro ao recuperar usuário com id=" + id})
           })
     }else{
         Userdb.find()
@@ -53,52 +52,52 @@ exports.find = (req, res) => {
               res.send(user)
           })
           .catch(err => {
-              res.status(500).send({ message : err.message || "Error Occurred while retriving user information"})
+              res.status(500).send({ message : err.message || "Ocorreu um erro ao recuperar as informações do usuário."})
           })
     }
 
     
 }
 
-// Update a new identified user by user id
+// Atualizar um novo usuário identificado por id de usuário
 exports.update = (req, res) => {
     if(!req.body){
         return res
           .status(400)
-          .send({ message : "Data to update can not be empty"})
+          .send({ message : "Os dados a serem atualizados não podem estar vazios."})
     }
 
     const id = req.params.id;
     Userdb.findByIdAndUpdate(id, req.body, { useFindAndModify: false})
       .then(data => {
           if(!data){
-              res.status(404).send({ message: `Cannot Update user with ${id}. Maybe user not found!`})
+              res.status(404).send({ message: `Não é possível atualizar o usuário com ${id}. Talvez o usuário não tenha sido encontrado!`})
           }else{
               res.send(data)
           }
       })
       .catch(err => {
-          res.status(500).send({ message : "Error Update user information"})
+          res.status(500).send({ message : "Erro ao atualizar as informações do usuário"})
       })
 }
 
-// Delete a user with specified user id in the request
+// Excluir um usuário com o ID de usuário especificado na solicitação
 exports.delete = (req, res) => {
     const id = req.params.id;
 
     Userdb.findByIdAndDelete(id)
       .then(data => {
           if(!data){
-              res.status(400).send({ message : `Cannot Delete with id ${id}. Maybe id is wrong`})
+              res.status(400).send({ message : `Não é possível excluir com id ${id}. Talvez id esteja errado!`})
           }else{
               res.send({
-                  message : "User was deleted successfully!"
+                  message : "O usuário foi excluído com sucesso!"
               })
           }
       })
       .catch(err => {
           res.status(500).send({
-              message: "Could not delete User with id=" + id
+              message: "Não foi possível excluir o usuário com id=" + id
           });
       });
 }

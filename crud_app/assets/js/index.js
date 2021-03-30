@@ -1,5 +1,5 @@
 $("#add_user").submit(function(event){
-    alert("Data Inserted Successfully!");
+    alert("Dados inseridos com sucesso!");
 })
 
 $("#update_user").submit(function(event){
@@ -19,7 +19,7 @@ $("#update_user").submit(function(event){
     }
 
     $.ajax(request).done(function(response){
-        alert("Data Updated Sucessfully!");
+        alert("Dados atualizados com sucesso!");
     })
 })
 
@@ -33,9 +33,9 @@ if(window.location.pathname == "/"){
             "method":"DELETE"
         }
 
-        if(confirm("Do you really want to delete this record?")){
+        if(confirm("Tem certeza que quer deletar este registro?")){
             $.ajax(request).done(function(response){
-                alert("Data Deleted Sucessfully!");
+                alert("Dados excluídos com sucesso!");
                 location.reload();
             })
         }
