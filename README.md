@@ -27,7 +27,7 @@ CRUD Application with Node, Express &amp; MongoDB
   <a href="#-license">License</a>
 </p>
 
-![Printsreen](./.github/Home.jpeg)
+![Printsreen](https://github.com/daviteixeira-btm/CRUD-Application-with-Node/tree/main/crud_app/assets/img)
 
 ## 👨🏻‍💻 Sobre o projeto
 <p>Nossa plataforma aproxima quem quer comprar de quem quer vender. Eles mesmo se comunicam, e negociam os valores e a entrega. Sem atravessador e sem custo nenhum para o produtor e parar o consumidor.
