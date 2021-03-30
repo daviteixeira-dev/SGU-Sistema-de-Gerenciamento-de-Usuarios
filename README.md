@@ -1,6 +1,3 @@
-# CRUD-Application-with-Node
-CRUD Application with Node, Express &amp; MongoDB
-
 <h1 align="center">
   SGU - Sistema de Gerenciamento de Usuários
 </h1>
