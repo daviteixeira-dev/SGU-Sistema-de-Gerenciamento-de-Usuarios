@@ -88,7 +88,7 @@ Despois que sua pull request for merged, você pode deletar sua branch
 
 ## 📝 License
 
-Esse projeto possui uma Licensa MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Esse projeto possui uma Licensa MIT License - veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
 
 ---
 
