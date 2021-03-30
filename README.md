@@ -35,6 +35,12 @@
 - [Node.js](https://nodejs.org/en/)
 - [Express](https://expressjs.com/pt-br/)
 - [MongoDB](https://www.mongodb.com/)
+- [Morgan](http://expressjs.com/en/resources/middleware/morgan.html)
+- [Nodemon](https://nodemon.io/)
+- [EJS](https://ejs.co/)
+- [Body-parser](https://www.npmjs.com/package/body-parser)
+- [Dotenv](https://www.npmjs.com/package/dotenv)
+- [Axios](https://www.npmjs.com/package/axios)
 
 ## 💻 Instalação, execução e desenvolvimento
 
@@ -43,23 +49,6 @@
 - [Node.js](https://nodejs.org/en/)
 - [npm](https://www.npmjs.com/)
 
-### Backend
-
-```bash
-# Faça o downloald do projeto no seu computador
-$ git clone https://github.com/daviteixeira-btm/SGU-Sistema-de-Gerenciamento-de-Usuarios.git
-
-# Entre na pasta raiz do projeto
-$ cd crud_app
-
-# Instale as dependências do node
-$ npm install
-
-# Tudo pronto para iniciar o servidor
-$ npm start
-
-```
-
 ### Web
 ```bash
 # Entre na pasta frontend
@@ -67,6 +56,12 @@ $ cd crud_app
 
 # Instale as dependências
 $ npm install
+$ npm init
+
+# Instale o express
+$ npm i express morgan nodemon ejs body-parser dotenv mongoose axios
+
+# No package.json altere na parte de scripts, onde tem "start: "node server.js" para "start: nodemon server.js".
 
 # Tudo pronto para iniciar a aplicação web
 $ npm start
