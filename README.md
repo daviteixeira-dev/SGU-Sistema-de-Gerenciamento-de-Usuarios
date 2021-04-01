@@ -51,9 +51,6 @@
 
 ### Web
 ```bash
-# Entre na pasta frontend
-$ cd crud_app
-
 # Instale as dependências
 $ npm install
 $ npm init
