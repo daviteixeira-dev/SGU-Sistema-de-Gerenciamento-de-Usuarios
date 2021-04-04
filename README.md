@@ -24,7 +24,7 @@
   <a href="#-license">License</a>
 </p>
 
-![Printsreen](./crud_app/assets/img/index.png)
+![Printsreen](./assets/img/index.png)
 
 ## 👨🏻‍💻 Sobre o projeto
 <p>Projeto final da disciplina de Desenvolvimento de Software para Web (2021), onde fizemos um Sistema de Gerenciamento de Usuários usando um CRUD com Node, Express e MongoDB.
